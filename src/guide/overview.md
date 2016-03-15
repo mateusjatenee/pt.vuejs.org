@@ -17,38 +17,38 @@ Em seu núcleo, o Vue.js é um sistema de data-binding reativo que faz manter se
 
 ![MVVM](/images/mvvm.png)
 
-For the simplest possible example:
+O exemplo mais simples possível:
 
 ``` html
-<!-- this is our View -->
-<div id="example-1">
-  Hello {{ name }}!
+<!-- essa é a nossa view -->
+<div id="exemplo-1">
+  Olá {{ name }}!
 </div>
 ```
 
 ``` js
-// this is our Model
+// esse é o nosso modelo
 var exampleData = {
   name: 'Vue.js'
 }
 
-// create a Vue instance, or, a "ViewModel"
-// which links the View and the Model
+// cria uma instância do Vue
+// que faz a conexão entre a View e o Modelo
 var exampleVM = new Vue({
-  el: '#example-1',
+  el: '#exemplo-1',
   data: exampleData
 })
 ```
 
-Result:
+Resultado:
 {% raw %}
-<div id="example-1" class="demo">Hello {{ name }}!</div>
+<div id="exemplo-1" class="demo">Hello {{ name }}!</div>
 <script>
 var exampleData = {
   name: 'Vue.js'
 }
 var exampleVM = new Vue({
-  el: '#example-1',
+  el: '#exemplo-1',
   data: exampleData
 })
 </script>
@@ -62,7 +62,7 @@ Let's look at a second example:
 
 ``` html
 <div id="example-2">
-  <p v-if="greeting">Hello!</p>
+  <p v-if="greeting">Olá!</p>
 </div>
 ```
 
