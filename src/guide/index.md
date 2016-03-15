@@ -113,19 +113,19 @@ new Vue({
 </script>
 {% endraw %}
 
-### Handle User Input
+### Lidando com elementos Input
 
 ``` html
 <div id="app">
   <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
+  <button v-on:click="reverseMessage">Reverter uma mensagem</button>
 </div>
 ```
 ``` js
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   },
   methods: {
     reverseMessage: function () {
@@ -137,13 +137,13 @@ new Vue({
 {% raw %}
 <div id="app4" class="demo">
   <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
+  <button v-on:click="reverseMessage">Reverter mensagem</button>
 </div>
 <script>
 new Vue({
   el: '#app4',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   },
   methods: {
     reverseMessage: function () {
@@ -154,7 +154,7 @@ new Vue({
 </script>
 {% endraw %}
 
-### All Together Now
+### Juntando o que aprendemos
 
 ``` html
 <div id="app">
@@ -173,7 +173,7 @@ new Vue({
   data: {
     newTodo: '',
     todos: [
-      { text: 'Add some todos' }
+      { text: 'Adicionar coisas a fazer' }
     ]
   },
   methods: {
@@ -206,7 +206,7 @@ new Vue({
   data: {
     newTodo: '',
     todos: [
-      { text: 'Add some todos' }
+      { text: 'Adicionar coisas a fazer' }
     ]
   },
   methods: {
@@ -225,4 +225,4 @@ new Vue({
 </script>
 {% endraw %}
 
-I hope this gives you a basic idea of how Vue.js works. I'm sure you also have many questions now - read along, and we will cover them in the rest of the guide.
+Espero que você tenha entendido o básico do Vue.js. Tenho certeza de que tens muitas perguntas agora — continue lendo, e falaremos delas no resto do guia.
