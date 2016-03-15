@@ -49,7 +49,7 @@ new Vue({
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   }
 })
 ```
@@ -62,13 +62,13 @@ new Vue({
 new Vue({
   el: '#app2',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   }
 })
 </script>
 {% endraw %}
 
-### Render a List
+### Renderizando uma lista
 
 ``` html
 <div id="app">
@@ -84,9 +84,9 @@ new Vue({
   el: '#app',
   data: {
     todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue.js' },
-      { text: 'Build Something Awesome' }
+      { text: 'Aprenda JavaScript' },
+      { text: 'Aprenda Vue.js' },
+      { text: 'Crie algo incrível' }
     ]
   }
 })
@@ -104,9 +104,9 @@ new Vue({
   el: '#app3',
   data: {
     todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue.js' },
-      { text: 'Build Something Awesome' }
+      { text: 'Aprenda JavaScript' },
+      { text: 'Aprenda Vue.js' },
+      { text: 'Crie algo incrível' }
     ]
   }
 })
