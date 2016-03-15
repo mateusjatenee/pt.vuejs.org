@@ -19,7 +19,7 @@ A forma mais fácil de testar o Vue.js é usando o [Exemplo de Hello World no JS
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   }
 })
 ```
@@ -31,7 +31,7 @@ new Vue({
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue.js!'
   }
 })
 </script>
