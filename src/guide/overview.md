@@ -1,14 +1,14 @@
 ---
-title: Overview
+title: Resumo
 type: guide
 order: 2
 ---
 
-Vue.js (pronounced /vjuː/, like **view**) is a library for building interactive web interfaces. The goal of Vue.js is to provide the benefits of **reactive data binding** and **composable view components** with an API that is as simple as possible.
+Vue.js é uma biblioteca para a criação de interfaces web interativas. O objetivo do Vue.js é fornecer os benefícios de **data binding reativo** e **componentes** em uma API que é o mais simples possível.
 
-Vue.js itself is not a full-blown framework - it is focused on the view layer only. It is therefore very easy to pick up and to integrate with other libraries or existing projects. On the other hand, when used in combination with proper tooling and supporting libraries, Vue.js is also perfectly capable of powering sophisticated Single-Page Applications.
+O Vue.js em si não é um framework — ele é focado apenas na camada de apresentação. Ele é, portanto, muito fácil de aprender e integrar com outras bibliotecas ou projetos existentes. Por outro lado, quando usado em combinação com as ferramentas certas e bibliotecas de suporte, é completamente possível usar o Vue.js em SPAs (Single-Page Applications).
 
-If you are an experienced frontend developer and want to know how Vue.js compares to other libraries/frameworks, check out the [Comparison with Other Frameworks](comparison.html); if you are more interested about how Vue.js approaches larger-scale applications, check out the section on [Building Larger-Scale Applications](application.html).
+Se você é um desenvolvedor experiente e quer saber como o Vue.js se compara em relação à outras bibliotecas/frameworks, dê uma olhada na página [Comparação com outros frameworks](comparison.html); se você é mais interessado em como o Vue.js lida com aplicações de larga escala, dê uma olhada na seção [Criando aplicações de larga escala](application.html).
 
 ## Reactive Data Binding
 
