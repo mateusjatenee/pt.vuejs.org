@@ -10,9 +10,10 @@ O Vue.js em si não é um framework — ele é focado apenas na camada de aprese
 
 Se você é um desenvolvedor experiente e quer saber como o Vue.js se compara em relação à outras bibliotecas/frameworks, dê uma olhada na página [Comparação com outros frameworks](comparison.html); se você é mais interessado em como o Vue.js lida com aplicações de larga escala, dê uma olhada na seção [Criando aplicações de larga escala](application.html).
 
-## Reactive Data Binding
+## Data Binding Reativo
 
-At the core of Vue.js is a reactive data-binding system that makes it extremely simple to keep your data and the DOM in sync. When using jQuery to manually manipulate the DOM, the code we write is often imperative, repetitive and error-prone. Vue.js embraces the concept of **data-driven view**. In plain words, it means we use special syntax in our normal HTML templates to "bind" the DOM to the underlying data. Once the bindings are created, the DOM will then be kept in sync with the data. Whenever you modify the data, the DOM updates accordingly. As a result, most of our application logic is now directly manipulating data, rather than messing around with DOM updates. This makes our code easier to write, easier to reason about and easier to maintain.
+Em seu núcleo, o Vue.js é um sistema de data-binding reativo que faz manter seus dados e a DOM sincronizados super simples. Ao usar jQuery para manipular a DOM manualmente, o código que escrevemos é — geralmente — imperativo, repetitivo e tende a ter erros. O Vue.js abraça o conceito de **data-driven view**. Simplificando: siginifica que usamos uma sintaxe especial nos nossos templates HTML e "ligamos" a DOM com os onssos dados. Assim que as ligações forem criadas, a DOM irá se manter em sincronia com os dados. Quando você modificar os dados, a DOM irá atualizar-se. Como resultado, a maioria da lógica da nossa aplicação é agora manipular dados, ao invés de ficar trabalhando com atualizações da DOM. Como resultado, fica mais fácil escrever nosso código, simples de ler e mais fácil de manter.
+
 
 ![MVVM](/images/mvvm.png)
 
