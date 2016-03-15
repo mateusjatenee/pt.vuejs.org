@@ -54,11 +54,12 @@ var exampleVM = new Vue({
 </script>
 {% endraw %}
 
-This looks pretty similar to just rendering a template, but Vue.js has done a lot of work under the hood. The data and the DOM are now linked, and everything is now **reactive**. How do we know? Just open up your browser developer console and modify `exampleData.name`. You should see the rendered example above update accordingly.
 
-Note that we didn't have to write any DOM-manipulating code: the HTML template, enhanced with the bindings, is a declarative mapping of the underlying data state, which is in turn just plain JavaScript objects. Our view is entirely data-driven.
+Parece que estamos apenas renderizando um template, mas o Vue.js fez bastante coisa debaixo dos panos. Os dados e a DOM agora estão conectados, e agora tudo é **reativo**. Como sabemos disso? Abra o Console do seu browser e modifique `exampleData.name`. Você deve ver que o exemplo renderizado também muda.
 
-Let's look at a second example:
+Note que não tivemos que escrever nenhum código de manipulação da DOM: o template HTML, aprimorado com os bindings (conexões), é uma forma de mapear os dados, que não são nada mais do que objetos em Javascript. A nossa view é completamente data-driven (orientada a dados). <!-- essa parte ficou bizarra -->
+
+Vamos dar uma olhada no segundo exemplo:
 
 ``` html
 <div id="example-2">
@@ -77,7 +78,7 @@ var exampleVM2 = new Vue({
 
 {% raw %}
 <div id="example-2" class="demo">
-  <span v-if="greeting">Hello!</span>
+  <span v-if="greeting">Olá!</span>
 </div>
 <script>
 var exampleVM2 = new Vue({
