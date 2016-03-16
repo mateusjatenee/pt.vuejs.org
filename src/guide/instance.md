@@ -17,21 +17,22 @@ var vm = new Vue({
 
 Uma instância do Vue é essencialmente um **ViewModel** — como definido no [padrão MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel) — por isso o nome da variável `vm` que você verá ao longo da documentação.
 
-When you instantiate a Vue instance, you need to pass in an **options object** which can contain options for data, template, element to mount on, methods, lifecycle callbacks and more. The full list of options can be found in the API reference.
+Quando você cria uma instância do Vue, você precisa passar um **objeto de opções** que pode conter opções para dados, template, o elemento ao qual o Vue será vinculado, métodos, ciclo de vida dos callbacks e mais. A lista completa de opções está na referência da API.
 
-The `Vue` constructor can be extended to create reusable **component constructors** with pre-defined options:
+O construtor `Vue` pode ser estendido para criar `construtores de componentes` reutilizáveis com opções pré-definidas:
 
 ``` js
 var MyComponent = Vue.extend({
-  // extension options
+  // opções de extensão
 })
 
 // all instances of `MyComponent` are created with
-// the pre-defined extension options
+// todas as instâncias de `MyComponent` são
+// criados com as opções pré-definidas
 var myComponentInstance = new MyComponent()
 ```
 
-Although you can create extended instances imperatively, in most cases you will be registering a component constructor as a custom element and composing them in templates declaratively. We will talk about the component system in detail later. For now, you just need to know that all Vue.js components are essentially extended Vue instances.
+Apesar de você poder criar instâncias estendidas imperativamente, na maioria dos casos você estará registrando um construtor de um componente como um elemento customizaod e compondo em templates declarativamente. Vamos falar mais sobre o sistema de componentes depois. Por enquanto, tudo o que você precisa saber é que todos os componetnes do Vue.js são essencialmente instâncias estendidas do Vue.
 
 ## Properties and Methods
 
