@@ -31,11 +31,11 @@ var MyComponent = Vue.extend({
 var myComponentInstance = new MyComponent()
 ```
 
-Apesar de você poder criar instâncias estendidas imperativamente, na maioria dos casos você estará registrando um construtor de um componente como um elemento customizaod e compondo em templates declarativamente. Vamos falar mais sobre o sistema de componentes depois. Por enquanto, tudo o que você precisa saber é que todos os componetnes do Vue.js são essencialmente instâncias estendidas do Vue.
+Apesar de você poder criar instâncias estendidas imperativamente, na maioria dos casos você estará registrando um construtor de um componente como um elemento customizado e compondo em templates declarativamente. Vamos falar mais sobre o sistema de componentes depois. Por enquanto, tudo o que você precisa saber é que todos os componentes do Vue.js são essencialmente instâncias estendidas do Vue.
 
-## Properties and Methods
+## Propriedades e Métodos
 
-Each Vue instance **proxies** all the properties found in its `data` object:
+Cada instância do Vue **intercepta** todas as propriedades encontradas no objeto `data`:
 
 ``` js
 var data = { a: 1 }
@@ -43,20 +43,20 @@ var vm = new Vue({
   data: data
 })
 
-vm.a === data.a // -> true
+vm.a === data.a // -> verdadeiro (true)
 
-// setting the property also affects original data
+// mudar a propriedade também afeta os dados originais
 vm.a = 2
 data.a // -> 2
 
-// ... and vice-versa
+// ... e vice versa
 data.a = 3
 vm.a // -> 3
 ```
 
-It should be noted that only these proxied properties are **reactive**. If you attach a new property to the instance after it has been created, it will not trigger any view updates. We will discuss the reactivity system in details later.
+Deve-se notar que apenas essas propriedades interceptadas são **reativas**. Se você adicionar uma nova propriedade à instância depois que ela foi criada, nenhum update na view vai acontecer. Vamos falar sobre o sistema de reatividade mais tarde.
 
-In addition to data properties, Vue instances expose a number of useful instance properties and methods. These properties and methods are prefixed with `$` to differentiate from proxied data properties. For example:
+Além das propriedades de dados, instâncias do Vue expoem vários métodos e propriedades úteis. Essas propriedades e métodos tem o prefixo `$` para diferenciá-las de propriedades de dados interceptadas. Por exemplo:
 
 ``` js
 var data = { a: 1 }
