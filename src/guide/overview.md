@@ -90,7 +90,7 @@ var exampleVM2 = new Vue({
 </script>
 {% endraw %}
 
-Here we are encountering something new. The `v-if` attribute you are seeing is called a **Directive**. Directives are prefixed with `v-` to indicate that they are special attributes provided by Vue.js, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Go ahead and set `exampleVM2.greeting` to `false` in the console. You should see the "Hello!" message disappear.
+Aqui encontramos uma coisa nova. O atributo `v-if` que você está vendo é uma **diretiva**. Diretivas têm o prefixo `v-` para indicar que são atributos especiais providos pelo Vue, e, assim como você provavlemente imaginou, eles aplicam um comportamente especial à DOM renderizada. Vá em frente e defina `exampleVM2.greeting` para `false` no seu Console. Você deve ver a mensagem "Hello" sumir.
 
 This second example demonstrates that not only can we bind DOM text to the data, we can also bind the **structure** of the DOM to the data. Moreover, Vue.js also provides a powerful transition effect system that can automatically apply transition effects when elements are inserted/removed by Vue.
 
