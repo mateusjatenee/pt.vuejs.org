@@ -26,7 +26,6 @@ var MyComponent = Vue.extend({
   // opções de extensão
 })
 
-// all instances of `MyComponent` are created with
 // todas as instâncias de `MyComponent` são
 // criados com as opções pré-definidas
 var myComponentInstance = new MyComponent()
