@@ -114,10 +114,10 @@ Na verdade, uma aplicação de larga escala feita com Vue.js iria geralmente ser
 </div>
 ```
 
-You may have noticed that Vue.js components are very similar to **Custom Elements**, which is part of the [Web Components Spec](http://www.w3.org/wiki/WebComponents/). In fact, Vue.js' component syntax is loosely modeled after the spec. For example, Vue components implement the [Slot API](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md) and the `is` special attribute. However, there are a few key differences:
+Você pode ter percebido que os componentes do Vue.js são muito parecidos com **Elementos Customizados**, que é parte dos [Web Components](http://www.w3.org/wiki/WebComponents/). Na verdade, a sintaxe de componentes do Vue.js é levemente baseada neles. Por exemplo, os componentes do Vue implementam a [Slot API](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md) e o atributo especial `is`. No entanto, existem algumas diferenças:
 
-1. The Web Components Spec is still very much a work in progress, and is not natively implemented in every browser. In comparison, Vue.js components don't require any polyfills and works consistently in all supported browsers (IE9 and above). When needed, Vue.js components can also be wrapped inside a native custom element.
+1. A especificação de Web Components ainda é um projeto em progresso, e não é suportado nativamente por todos os browsers. Em comparação, os componentes do Vue não precisam de nenhum polyfill e funcionam consistentemente nos browsers suportados (a partir do Internet Explorer 9). Quando necessário, os componentes do Vue podem estar dentro de um elemento customizado nativo.
 
-2. Vue.js components provide important features that are not available in plain custom elements, most notably cross-component data flow, custom event communication and dynamic component switching with transition effects.
+2. Os componentes do Vue.js fornecem funcionalidades importantes que não são disponíveis usando elementos customizados, a mais notável sendo o fluxo de dados entre componentes, comunicação de eventos customizada e troca dinâmica de copmonentes com efeitos de transição.
 
-The component system is the foundation for building large apps with Vue.js. In addition, the Vue.js ecosystem also provides advanced tooling and various supporting libraries that can be put together to create a more "framework" like system.
+O sistema de componentes é a fundação para criar aplicativos de larga escala com o Vue. Além disso, o ecossistema do Vue fornece ferramentas e bibliotecas que podem ser usadas juntas para criar um sistema mais parecido com um Framework.
