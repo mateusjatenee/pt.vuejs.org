@@ -92,9 +92,9 @@ var exampleVM2 = new Vue({
 
 Aqui encontramos uma coisa nova. O atributo `v-if` que você está vendo é uma **diretiva**. Diretivas têm o prefixo `v-` para indicar que são atributos especiais providos pelo Vue, e, assim como você provavlemente imaginou, eles aplicam um comportamente especial à DOM renderizada. Vá em frente e defina `exampleVM2.greeting` para `false` no seu Console. Você deve ver a mensagem "Hello" sumir.
 
-This second example demonstrates that not only can we bind DOM text to the data, we can also bind the **structure** of the DOM to the data. Moreover, Vue.js also provides a powerful transition effect system that can automatically apply transition effects when elements are inserted/removed by Vue.
+O segundo exemplo mostra que não apenas podemos ligar textos da DOM a dados, mas também podemos ligar **estruturas** da DOM a dados. O Vue ainda tem um sistema de efeitos de transições que automaticamente aplica efeitos de transição quando elementos são inseridos ou removidos pelo Vue.
 
-There are quite a few other directives, each with its own special functionality. For example the `v-for` directive for displaying items in an Array, or the `v-bind` directive for binding HTML attributes. We will discuss the full data-binding syntax with more details later.
+Existem outras diretivas, cada uma com sua funcionalidade especial. Por exemplo, a diretiva `v-for` permite mostrar itens em um Array, e a `v-bind` permite ligar atributos HTML. Vamos falar sobre isso no futuro.
 
 ## Component System
 
