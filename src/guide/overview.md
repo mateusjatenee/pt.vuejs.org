@@ -96,13 +96,13 @@ O segundo exemplo mostra que não apenas podemos ligar textos da DOM a dados, ma
 
 Existem outras diretivas, cada uma com sua funcionalidade especial. Por exemplo, a diretiva `v-for` permite mostrar itens em um Array, e a `v-bind` permite ligar atributos HTML. Vamos falar sobre isso no futuro.
 
-## Component System
+## Sistema de Componentes
 
-The Component System is another important concept in Vue.js, because it's an abstraction that allows us to build large-scale applications composed of small, self-contained, and often reusable components. If we think about it, almost any type of application interface can be abstracted into a tree of components:
+O Sistema de Componentes é outro conceito importante no Vue.js porque é uma abstração que nos permite criar aplicações de larga-escala compostas por pequenos, reutilizáveis componentes. Se pensarmos nisso, praticamente qualquer aplicação pode ser abstraída em em uma árvore de componentes:
 
-![Component Tree](/images/components.png)
+![Árvore de Componentes](/images/components.png)
 
-In fact, a typical large application built with Vue.js would form exactly what is on the right - a tree of components. We will talk a lot more about components later in the guide, but here's an (imaginary) example of what an app's template would look like with components:
+Na verdade, uma aplicação de larga escala feita com Vue.js iria geralmente ser da forma da direita — uma árvore de componentes. Vamos falar sobre componentes depois nesse guia, mas aqui está um exemplo (imaginário) de como seria a estrutura de uma aplicação usando componentes.
 
 ``` html
 <div id="app">
