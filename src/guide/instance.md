@@ -1,12 +1,13 @@
 ---
-title: The Vue Instance
+title: A instância do Vue
 type: guide
 order: 3
 ---
 
-## Constructor
+## Construtor
 
-Every Vue.js app is bootstrapped by creating a **root Vue instance** with the `Vue` constructor function:
+
+Toda aplicação que usa o Vue.js inicia quando é criada uma **instância do Vue** usando o construtor `Vue`:
 
 ``` js
 var vm = new Vue({
@@ -14,7 +15,7 @@ var vm = new Vue({
 })
 ```
 
-A Vue instance is essentially a **ViewModel** as defined in the [MVVM pattern](https://en.wikipedia.org/wiki/Model_View_ViewModel), hence the variable name `vm` you will see throughout the docs.
+Uma instância do Vue é essencialmente um **ViewModel** — como definido no [padrão MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel) — por isso o nome da variável `vm` que você verá ao longo da documentação.
 
 When you instantiate a Vue instance, you need to pass in an **options object** which can contain options for data, template, element to mount on, methods, lifecycle callbacks and more. The full list of options can be found in the API reference.
 
