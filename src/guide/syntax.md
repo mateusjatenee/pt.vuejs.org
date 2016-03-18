@@ -34,7 +34,7 @@ As duas chaves interpretam os dados como texto simples, não HTML. Para exibir o
 
 O conteúdo será exibido como HTML simples — data bindings serão ignorados. Se você precisa reutilizar pedaços de templates, você deve usar [templates parciais](/api/#partial).
 
-<p class="tip">Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to [XSS attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). Only use HTML interpolation on trusted content and **never** on user-provided content.</p>
+<p class="tip">Renderizar HTML arbitrariamente no seu site pode ser muito perigoso porque pode levar facilmente a um [ataque XSS](https://en.wikipedia.org/wiki/Cross-site_scripting). Apenas use interpolação de HTML quando puder confiar no conteúdo e **nunca** use em conteúdo provido pelo usuário.</p>
 
 ### Attributes
 
