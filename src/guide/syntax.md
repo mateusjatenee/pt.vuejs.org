@@ -36,15 +36,15 @@ O conteúdo será exibido como HTML simples — data bindings serão ignorados. 
 
 <p class="tip">Renderizar HTML arbitrariamente no seu site pode ser muito perigoso porque pode levar facilmente a um [ataque XSS](https://en.wikipedia.org/wiki/Cross-site_scripting). Apenas use interpolação de HTML quando puder confiar no conteúdo e **nunca** use em conteúdo provido pelo usuário.</p>
 
-### Attributes
+### Atributos
 
-Mustaches can also be used inside HTML attributes:
+Chaves duplas também podem ser usadas dentro de atributos HTML:
 
 ``` html
 <div id="item-{{ id }}"></div>
 ```
 
-Note that attribute interpolations are disallowed in Vue.js directives and special attributes. Don't worry, Vue.js will raise warnings for you when mustaches are used in wrong places.
+Note que interpolações de atributo são desabilitadas em diretivas e atributos especiais do Vue. Não se preocupe, o Vue irá automaticamente emitir alertas quando as chaves duplas forem usadas nos lugares errados.
 
 ## Binding Expressions
 
