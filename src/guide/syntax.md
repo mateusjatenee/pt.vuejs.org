@@ -6,17 +6,18 @@ order: 4
 
 O Vue usa uma implementação de DOM baseada em templates. Isso significa que todos os templates do Vue.js são essencialmente HTML válido e melhorado com alguns atributos especiais. Mantenha isso em mente, já que é isso que faz os templates do Vue diferentes de templates baseados em strings.
 
-## Interpolations
+## Interpolações
 
-### Text
+### Texto
 
 The most basic form of data binding is text interpolation using the "Mustache" syntax (double curly braces):
+A forma mais básica de data binding é interpolação de texto usando a sintaxe "Mustache" (Bigode) => {{ }}
 
 ``` html
-<span>Message: {{ msg }}</span>
+<span>Mensagem: {{ msg }}</span>
 ```
 
-The mustache tag will be replaced with the value of the `msg` property on the corresponding data object. It will also be updated whenever the data object's `msg` property changes.
+A tag mustache (bigode) será substituída pelo valor da propriedade `msg` nos objeto de dados correspondente. Será, também, atualizado toda vez que o valor da propriedade `msg` mudar.
 
 You can also perform one-time interpolations that do not update on data change:
 
