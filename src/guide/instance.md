@@ -93,7 +93,7 @@ var vm = new Vue({
 // -> "a is: 1"
 ```
 
-There are also other hooks which will be called at different stages of the instance's lifecycle, for example `compiled`, `ready` and `destroyed`. All lifecycle hooks are called with their `this` context pointing to the Vue instance invoking it. Some users may have been wondering where the concept of "controllers" lives in the Vue.js world, and the answer is: there are no controllers in Vue.js. Your custom logic for a component would be split among these lifecycle hooks.
+Existem também outros métodos que serão chamados em diferentes estágios do ciclo de vida da instância — `compiled`, `ready` e `destroyed`, por exemplo. Todos os métodos do ciclo de vida são chamados com o contexto `this` apontando para a instância do Vue que o invoca.  Alguns usuários talvez tenham se questionado onde está o conceito de "controllers" no mundo do Vue, e a resposta é: não existem controllers no Vue. A sua lógica customizada para um componente seria dividida nesses métodos do ciclo de vida.
 
 ## Lifecycle Diagram
 
