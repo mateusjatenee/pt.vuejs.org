@@ -48,7 +48,7 @@ Note que interpolações de atributo são desabilitadas em diretivas e atributos
 
 ## Binding Expressions
 
-The text we put inside mustache tags are called **binding expressions**. In Vue.js, a binding expression consists of a single JavaScript expression optionally followed by one or more filters.
+O texto que colocamos dentro das chaves duplas são chamados de **binding expressions**. No Vue, uma binding expression consiste de uma única expressão JavaScript seguida opcionalmente de um ou mais filtros.
 
 ### JavaScript Expressions
 
