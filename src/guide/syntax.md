@@ -50,9 +50,9 @@ Note que interpolações de atributo são desabilitadas em diretivas e atributos
 
 O texto que colocamos dentro das chaves duplas são chamados de **binding expressions**. No Vue, uma binding expression consiste de uma única expressão JavaScript seguida opcionalmente de um ou mais filtros.
 
-### JavaScript Expressions
+### Expressões JavaScript
 
-So far we've only been binding to simple property keys in our templates. But Vue.js actually supports the full power of JavaScript expressions inside data bindings:
+Até agora nós somente ligamos coisas à propriedades simples em nossos templates. Mas, na verdade, o Vue suporta todo o poder de expressões Javascript dentro de data bindings:
 
 ``` html
 {{ number + 1 }}
@@ -62,13 +62,13 @@ So far we've only been binding to simple property keys in our templates. But Vue
 {{ message.split('').reverse().join('') }}
 ```
 
-These expressions will be evaluated in the data scope of the owner Vue instance. One restriction is that each binding can only contain **one single expression**, so the following will **NOT** work:
+Essas expressões serão processadas no escopo dos dados da instância do Vue à qual pertence. Uma restrição é que cada ligação pode conter apenas **uma única expressão**, então o seguinte **NÃO** irá funcionar: 
 
 ``` html
-<!-- this is a statement, not an expression: -->
+<!-- isso é uma declaração, não uma expressão: -->
 {{ var a = 1 }}
 
-<!-- flow control won't work either, use ternary expressions -->
+<!-- controle de fluxo também não irá funcionar. Use expressões ternárias -->
 {{ if (ok) { return message } }}
 ```
 
