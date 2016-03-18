@@ -95,8 +95,8 @@ var vm = new Vue({
 
 Existem também outros métodos que serão chamados em diferentes estágios do ciclo de vida da instância — `compiled`, `ready` e `destroyed`, por exemplo. Todos os métodos do ciclo de vida são chamados com o contexto `this` apontando para a instância do Vue que o invoca.  Alguns usuários talvez tenham se questionado onde está o conceito de "controllers" no mundo do Vue, e a resposta é: não existem controllers no Vue. A sua lógica customizada para um componente seria dividida nesses métodos do ciclo de vida.
 
-## Lifecycle Diagram
+## Diagrama do Ciclo de Vida
 
-Below is a diagram for the instance lifecycle. You don't need to fully understand everything going on right now, but this diagram will be helpful in the future.
+Abaixo está um diagrama do ciclo de vida da instância. Você não precisa entender completamente o que está acontecendo agora, mas esse diagrama vai te ajudar no futuro.
 
 ![Lifecycle](/images/lifecycle.png)
