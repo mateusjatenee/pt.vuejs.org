@@ -76,9 +76,9 @@ vm.$watch('a', function (newVal, oldVal) {
 
 Consulte a [referência da API](/api) para a lista completa de propriedades e métodos da instância.
 
-## Instance Lifecycle
+## Ciclo de Vida da Instância
 
-Each Vue instance goes through a series of initialization steps when it is created - for example, it needs to set up data observation, compile the template, and create the necessary data bindings. Along the way, it will also invoke some **lifecycle hooks**, which give us the opportunity to execute custom logic. For example, the `created` hook is called after the instance is created:
+Cada instância do Vue passa por uma série de etapas de inicialização quando é criada - por exemplo, ela precisa definir dados de observação, compilar o template, e criar os data bindings necessários. Durante esse procedimento, ela também invoca alguns **métodos do ciclo de vida**, que nos dam a oportunidade de executar lógica customizada. Por exemplo, o método `created` é chamado depois da instância ser criada.
 
 ``` js
 var vm = new Vue({
@@ -86,7 +86,7 @@ var vm = new Vue({
     a: 1
   },
   created: function () {
-    // `this` points to the vm instance
+    // `this` aponta à uma instância do Vue
     console.log('a is: ' + this.a)
   }
 })
