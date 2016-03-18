@@ -18,11 +18,10 @@ A forma mais básica de data binding é interpolação de texto usando a sintaxe
 ```
 
 A tag mustache (bigode) será substituída pelo valor da propriedade `msg` nos objeto de dados correspondente. Será, também, atualizado toda vez que o valor da propriedade `msg` mudar.
-
-You can also perform one-time interpolations that do not update on data change:
+Você também pode criar interpolações que ocorrem apenas uma vez:
 
 ``` html
-<span>This will never change: {{* msg }}</span>
+<span>Isso nunca mudará: {{* msg }}</span>
 ```
 
 ### Raw HTML
