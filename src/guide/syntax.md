@@ -72,31 +72,32 @@ Essas expressões serão processadas no escopo dos dados da instância do Vue à
 {{ if (ok) { return message } }}
 ```
 
-### Filters
+### Filtros
 
-Vue.js allows you to append optional "filters" to the end of an expression, denoted by the "pipe" symbol:
+O Vue lhe permite adicionar "filtros" opcionais ao final de uma expressão, detonado pelo símbolo "pipe" ( | ):
 
 ``` html
 {{ message | capitalize }}
 ```
 
-Here we are "piping" the value of the `message` expression through the built-in `capitalize` filter, which is in fact just a JavaScript function that returns the capitalized value. Vue.js provides a number of built-in filters, and we will talk about how to write your own filters later.
+Aqui estamos passando o valor da expressão `message` pelo filtro embutido `capitalize`, que na verdade apenas uma função que retorna o valor capitalizado. O Vue fornece um grande número de filtros embutidos, e falaremos de como criar seu próprio filtro depois.
 
-Note that the pipe syntax is not part of JavaScript syntax, therefore you cannot mix filters inside expressions; you can only append them at the end of an expression.
 
-Filters can be chained:
+Note que a sintaxe "pipe" não é parte da sintaxe do Javascript, portanto você não pode misturar filtros dentro de expressões; você pode apenas adicioná-las no final de uma expressão.
+
+Filtros podem ser encadeados:
 
 ``` html
 {{ message | filterA | filterB }}
 ```
 
-Filters can also take arguments:
+Filtros também podem receber parâmetros:
 
 ``` html
 {{ message | filterA 'arg1' arg2 }}
 ```
 
-The filter function always receives the expression's value as the first argument. Quoted arguments are interpreted as plain string, while un-quoted ones will be evaluated as expressions. Here, the plain string `'arg1'` will be passed into the filter as the second argument, and the value of expression `arg2` will be evaluated and passed in as the third argument.
+A função filter sempre recebe o valor da expressão como primeiro parâmetro. Parâmetros dentro de aspas serão tratados como strings, enquanto parâmetros sem aspas serão tratrados como expressões. Aqui, a string `arg1` será passada a um filtro como o segundo parâmetro, e o valor da expressão `arg2` será tratada e passada como terceiro parâmetro.
 
 ## Directives
 
