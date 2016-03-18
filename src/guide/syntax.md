@@ -24,15 +24,15 @@ Você também pode criar interpolações que ocorrem apenas uma vez:
 <span>Isso nunca mudará: {{* msg }}</span>
 ```
 
-### Raw HTML
+### HTML Puro
 
-The double mustaches interprets the data as plain text, not HTML. In order to output real HTML, you will need to use triple mustaches:
+As duas chaves interpretam os dados como texto simples, não HTML. Para exibir o verdadeiro HTML, você precisa usar três chaves:
 
 ``` html
 <div>{{{ raw_html }}}</div>
 ```
 
-The contents are inserted as plain HTML - data bindings are ignored. If you need to reuse template pieces, you should use [partials](/api/#partial).
+O conteúdo será exibido como HTML simples — data bindings serão ignorados. Se você precisa reutilizar pedaços de templates, você deve usar [templates parciais](/api/#partial).
 
 <p class="tip">Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to [XSS attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). Only use HTML interpolation on trusted content and **never** on user-provided content.</p>
 
