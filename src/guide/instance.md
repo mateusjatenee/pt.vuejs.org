@@ -65,16 +65,16 @@ var vm = new Vue({
   data: data
 })
 
-vm.$data === data // -> true
-vm.$el === document.getElementById('example') // -> true
+vm.$data === data // -> verdadeiro
+vm.$el === document.getElementById('example') // -> verdadeiro
 
-// $watch is an instance method
+// $watch é um método da instância
 vm.$watch('a', function (newVal, oldVal) {
-  // this callback will be called when `vm.a` changes
+  // esse callback será chamado quando `vm.a` mudar
 })
 ```
 
-Consult the [API reference](/api) for the full list of instance properties and methods.
+Consulte a [referência da API](/api) para a lista completa de propriedades e métodos da instância.
 
 ## Instance Lifecycle
 
