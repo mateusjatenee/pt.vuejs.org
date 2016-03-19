@@ -99,9 +99,9 @@ Filtros também podem receber parâmetros:
 
 A função filter sempre recebe o valor da expressão como primeiro parâmetro. Parâmetros dentro de aspas serão tratados como strings, enquanto parâmetros sem aspas serão tratrados como expressões. Aqui, a string `arg1` será passada a um filtro como o segundo parâmetro, e o valor da expressão `arg2` será tratada e passada como terceiro parâmetro.
 
-## Directives
+## Diretivas
 
-Directives are special attributes with the `v-` prefix. Directive attribute values are expected to be **binding expressions**, so the rules about JavaScript expressions and filters mentioned above apply here as well. A directive's job is to reactively apply special behavior to the DOM when the value of its expression changes. Let's review the example we saw in the introduction:
+Diretivas são atributos especiais com o prefixo `v-`. Espera-se que os valores do atributo de uma diretiva sejam **binding expressions*, portanto as regras sobre expressões e filtros JavaScript que falamos acima se aplicam aqui também. O trabalho de uma diretiva é aplicar comportamentos especiais a DOM de forma reativa quando o valor da expressão mudar. Vamos revisar o exemplo que vimos na introdução:
 
 ``` html
 <p v-if="greeting">Hello!</p>
