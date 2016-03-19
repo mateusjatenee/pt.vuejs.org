@@ -104,20 +104,20 @@ A função filter sempre recebe o valor da expressão como primeiro parâmetro. 
 Diretivas são atributos especiais com o prefixo `v-`. Espera-se que os valores do atributo de uma diretiva sejam **binding expressions*, portanto as regras sobre expressões e filtros JavaScript que falamos acima se aplicam aqui também. O trabalho de uma diretiva é aplicar comportamentos especiais a DOM de forma reativa quando o valor da expressão mudar. Vamos revisar o exemplo que vimos na introdução:
 
 ``` html
-<p v-if="greeting">Hello!</p>
+<p v-if="greeting">Olá!</p>
 ```
 
-Here, the `v-if` directive would remove/insert the `<p>` element based on the truthiness of the value of the expression `greeting`.
+Aqui, a diretiva `v-if` iria remover/inserir o elemento `<p>` baseado na veracidade do valor da expressão `greeting`. 
 
-### Arguments
+### Argumentos
 
-Some directives can take an "argument", denoted by a colon after the directive name. For example, the `v-bind` directive is used to reactively update an HTML attribute:
+Algumas diretivas podem receber "parâmetros", detonados por dois pontos após o nome da diretiva. Por exemplo, a diretiva `v-bind` é usada para atualizar um atributo HTML reativamente:
 
 ``` html
 <a v-bind:href="url"></a>
 ```
 
-Here `href` is the argument, which tells the `v-bind` directive to bind the element's `href` attribute to the value of the expression `url`. You may have noticed this achieves the same result as an attribute interpolation using `{% raw %}href="{{url}}"{% endraw %}`: that is correct, and in fact, attribute interpolations are translated into `v-bind` bindings internally.
+Aqui, `href` é o parâmetro, que diz à diretiva `v-bind` para ligar o atributo `href` do elemento ao valor da expressão `url`. Você talvez tenha notado que isso tem o mesmo resultado de uma interpolação de atributo usando `{%raw %}href="{{url}}"{% endraw %}`: isso é correto, e de fato, interpolações de atributo são convertidas para ligações `v-bind` internamente.
 
 Another example is the `v-on` directive, which listens to DOM events:
 
