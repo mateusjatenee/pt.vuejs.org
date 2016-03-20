@@ -119,13 +119,13 @@ Algumas diretivas podem receber "parâmetros", detonados por dois pontos após o
 
 Aqui, `href` é o parâmetro, que diz à diretiva `v-bind` para ligar o atributo `href` do elemento ao valor da expressão `url`. Você talvez tenha notado que isso tem o mesmo resultado de uma interpolação de atributo usando `{%raw %}href="{{url}}"{% endraw %}`: isso é correto, e de fato, interpolações de atributo são convertidas para ligações `v-bind` internamente.
 
-Another example is the `v-on` directive, which listens to DOM events:
+Outro exemplo é a diretiva `v-on`, que escuta os eventos da DOM:
 
 ``` html
 <a v-on:click="doSomething">
 ```
 
-Here the argument is the event name to listen to. We will talk about event handling in more detail too.
+Aqui, o argumento é o nome do evento ao qual a diretiva deve escutar. Vamos falar mais sobre event handling no futuro.
 
 ### Modifiers
 
