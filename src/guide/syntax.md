@@ -127,15 +127,15 @@ Outro exemplo é a diretiva `v-on`, que escuta os eventos da DOM:
 
 Aqui, o argumento é o nome do evento ao qual a diretiva deve escutar. Vamos falar mais sobre event handling no futuro.
 
-### Modifiers
+### Modificadores
 
-Modifiers are special postfixes denoted by a dot, which indicates that a directive should be bound in some special way. For example, the `.literal` modifier tells the directive to interpret its attribute value as a literal string rather than an expression:
+Modificares são prefixos especiais detonados por um ponto, que indica que a diretiva deve ser "ligada" de forma diferente. Por exemplo, o modificador `.literal` diz à diretiva para interpretar o valor do atributo como uma string ao invés de uma expressão:
 
 ``` html
 <a v-bind:href.literal="/a/b/c"></a>
 ```
 
-Of course, this seems pointless because we can just do `href="/a/b/c"` instead of using a directive. The example here is just for demonstrating the syntax. We will see more practical uses of modifiers later.
+Esse exemplo parece sem sentido já que podemos usar apenas `href="/a/b/c"` ao invés de usar a diretiva. O exemplo foi apenas para mostrar a sintaxe — veremos uso prático de modificadores no futuro.
 
 ## Shorthands
 
