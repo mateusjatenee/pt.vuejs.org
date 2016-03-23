@@ -141,22 +141,22 @@ Esse exemplo parece sem sentido já que podemos usar apenas `href="/a/b/c"` ao i
 
 O prefixo `v-` serve como uma forma de identificar atributos especificos do Vue nos seus templates. Isso é útil quando você está usando o Vue.js para aplicar comportamentos dinâmicos a uma tag existente, mas pode parecer verboso para algumas diretivas usadas frequentemente. Ao mesmo tmepo, a necessidade do prefixo `v-` torna-se menos importante quando você está montando um SPA onde o Vue administra todos os templates. Portanto, o Vue fornece abreviações especiais para as diretivas mais usadas, `v-bind` e `v-on`:
 
-### `v-bind` Shorthand
+### Abreviacões de `v-bind`
 
 ``` html
-<!-- full syntax -->
+<!-- sintaxe completa -->
 <a v-bind:href="url"></a>
 
-<!-- shorthand -->
+<!-- abreviação -->
 <a :href="url"></a>
 
-or
+ou
 
-<!-- full syntax -->
-<button v-bind:disabled="someDynamicCondition">Button</button>
+<!-- sintaxe completa -->
+<button v-bind:disabled="someDynamicCondition">Botão</button>
 
-<!-- shorthand -->
-<button :disabled="someDynamicCondition">Button</button>
+<!-- abreviação -->
+<button :disabled="someDynamicCondition">Botão</button>
 ```
 
 
