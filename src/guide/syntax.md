@@ -137,9 +137,9 @@ Modificares são prefixos especiais detonados por um ponto, que indica que a dir
 
 Esse exemplo parece sem sentido já que podemos usar apenas `href="/a/b/c"` ao invés de usar a diretiva. O exemplo foi apenas para mostrar a sintaxe — veremos uso prático de modificadores no futuro.
 
-## Shorthands
+## Abreviações
 
-The `v-` prefix serves as a visual cue for identifying Vue-specific attributes in your templates. This is useful when you are using Vue.js to apply dynamic behavior to some existing markup, but can feel verbose for some frequently used directives. At the same time, the need for the `v-` prefix becomes less important when you are building an SPA where Vue.js manages every template. Therefore, Vue.js provides special shorthands for two of the most often used directives, `v-bind` and `v-on`:
+O prefixo `v-` serve como uma forma de identificar atributos especificos do Vue nos seus templates. Isso é útil quando você está usando o Vue.js para aplicar comportamentos dinâmicos a uma tag existente, mas pode parecer verboso para algumas diretivas usadas frequentemente. Ao mesmo tmepo, a necessidade do prefixo `v-` torna-se menos importante quando você está montando um SPA onde o Vue administra todos os templates. Portanto, o Vue fornece abreviações especiais para as diretivas mais usadas, `v-bind` e `v-on`:
 
 ### `v-bind` Shorthand
 
