@@ -160,7 +160,7 @@ ou
 ```
 
 
-### `v-on` Shorthand
+### Abreviação `v-on`
 
 ``` html
 <!-- full syntax -->
@@ -170,4 +170,4 @@ ou
 <a @click="doSomething"></a>
 ```
 
-They may look a bit different from "valid" HTML, but all Vue.js supported browsers can parse it correctly, and they do not appear in the final rendered markup. The shorthand syntax is totally optional, but you will likely appreciate it when you learn more about its usage later.
+Elas podem parecer um pouco diferentes de HTML "válido", mas todos os browsers que suportam o Vue.js podem analisar ele corretamente, e eles não aparecem na marcação final renderizada. A sintaxe abreviada é totalmente opcional, mas você provavelmente irá gostar de usá-la quando você aprender mais sobre seu uso.
