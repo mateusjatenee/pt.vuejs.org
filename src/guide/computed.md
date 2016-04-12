@@ -4,7 +4,7 @@ type: guide
 order: 5
 ---
 
-In-template expressions are very convenient, but they are really meant for simple operations only. Templates are meant to describe the structure of your view. Putting too much logic into your templates can make them bloated and hard to maintain. This is why Vue.js limits binding expressions to one expression only. For any logic that requires more than one expression, you should use a **computed property**.
+Expressões dentro de templates são convenientes, mas elas são destinadas apenas à operações simples. Templates devem descrever a estrutura da sua view. Colocar muita lógica nos seus templates pode torná-los "sujos" e difíceis de manter. É por isso que o Vue.js limita as expressões de ligação à apenas uma expressão. Para qualquer lógica que precise de mais de uma expressão, você deve usar uma **computed property**.
 
 ### Basic Example
 
