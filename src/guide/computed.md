@@ -6,7 +6,7 @@ order: 5
 
 Expressões dentro de templates são convenientes, mas elas são destinadas apenas à operações simples. Templates devem descrever a estrutura da sua view. Colocar muita lógica nos seus templates pode torná-los "sujos" e difíceis de manter. É por isso que o Vue.js limita as expressões de ligação à apenas uma expressão. Para qualquer lógica que precise de mais de uma expressão, você deve usar uma **computed property**.
 
-### Basic Example
+### Exemplo Básico
 
 ``` html
 <div id="example">
@@ -21,16 +21,16 @@ var vm = new Vue({
     a: 1
   },
   computed: {
-    // a computed getter
+    // um getter computado
     b: function () {
-      // `this` points to the vm instance
+      // `this` referencia a instância da vm
       return this.a + 1
     }
   }
 })
 ```
 
-Result:
+Resultado:
 
 {% raw %}
 <div id="example" class="demo">
@@ -51,7 +51,7 @@ var vm = new Vue({
 </script>
 {% endraw %}
 
-Here we have declared a computed property `b`. The function we provided will be used as the getter function for the property `vm.b`:
+Aqui nós declaramos uma propriedade computada `b`. A função que fornecemos será usada como um getter para a propriedade `vm.b`:
 
 ``` js
 console.log(vm.b) // -> 2
@@ -59,9 +59,9 @@ vm.a = 2
 console.log(vm.b) // -> 3
 ```
 
-You can open the console and play with the example vm yourself. The value of `vm.b` is always dependent on the value of `vm.a`.
+Você pode abrir o console e brincar com o exemplo. O valor de `vm.b` será sempre dependente do valor de `vm.a`.
 
-You can data-bind to computed properties in templates just like a normal property. Vue is aware that `vm.b` depends on `vm.a`, so it will update any bindings that depends on `vm.b` when `vm.a` changes. And the best part is that we've created this dependency relationship declaratively: the computed getter function is pure and has no side effects, which makes it easy to test and reason about.
+Você pode ligar computed properties em templates assim como uma propriedade normal. O Vue está ciente de que `vm.b` depende de `vm.a`, então ele irá atualizar quaisquer valores que dependem de `vm.b` quando `vm.a` mudar. E a melhor parte é que criamos essa relação de dependência declarativamente: o getter da computed property é pura e não tem nenhum colateral, o que o torna fácil de testar e compreender.
 
 ### Computed Property vs. $watch
 
