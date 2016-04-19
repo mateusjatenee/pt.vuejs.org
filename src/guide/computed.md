@@ -65,7 +65,7 @@ Você pode ligar computed properties em templates assim como uma propriedade nor
 
 ### Computed Property vs. $watch
 
-Vue.js does provide an API method called `$watch` that allows you to observe data changes on a Vue instance. When you have some data that needs to change based on some other data, it is tempting to use `$watch` - especially if you are coming from an AngularJS background. However, it is often a better idea to use a computed property rather than an imperative `$watch` callback. Consider this example:
+A API do Vue.js oferece um método chamado `$watch` que lhe permite observar mudanças de dados numa instância do Vue. Quando você tem alguns dados que precisam mudar baseados em outros dados, é tentador usar o `$watch` - especialmente se você vem do AngularJS. Entretanto, geralmente é melhor voc%e usar uma computed property, ao invés de usar um callback imperativo do `$watch`. Considere esse exemplo:  
 
 ``` html
 <div id="demo">{{fullName}}</div>
@@ -89,7 +89,7 @@ vm.$watch('lastName', function (val) {
 })
 ```
 
-The above code is imperative and repetitive. Compare it with a computed property version:
+O código acima é imperativo e repetitivo. Compare-o com uma versão usando computed properties:
 
 ``` js
 var vm = new Vue({
@@ -105,7 +105,7 @@ var vm = new Vue({
 })
 ```
 
-Much better, isn't it?
+Bem melhor, não?
 
 ### Computed Setter
 
