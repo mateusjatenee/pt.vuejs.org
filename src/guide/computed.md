@@ -109,7 +109,7 @@ Bem melhor, não?
 
 ### Computed Setter
 
-Computed properties are by default getter-only, but you can also provide a setter when you need it:
+Computed properties são, por padrão, apenas getters, mas você também pode prover um setter quando precisar:
 
 ``` js
 // ...
@@ -130,6 +130,6 @@ computed: {
 // ...
 ```
 
-Now when you call `vm.fullName = 'John Doe'`, the setter will be invoked and `vm.firstName` and `vm.lastName` will be updated accordingly.
+Agora, quando você chamar `vm.fullName = 'John Doe'`, o setter será invocado e `vm.firstName` e `vm.lastName` serão atualizados.
 
-The technical details behind how computed properties are updated are [discussed in another section](reactivity.html#Inside_Computed_Properties) dedicated to the reactivity system.
+Os detalhes técnicos por trás de como computed properties são atualizadas são [discutidos em outra seção](reactiviy.html#Inside_Computed_Properties) dedicada ao sistema de reatividade.
