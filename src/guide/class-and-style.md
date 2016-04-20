@@ -4,15 +4,15 @@ type: guide
 order: 6
 ---
 
-A common need for data binding is manipulating an element's class list and its inline styles. Since they are both attributes, we can use `v-bind` to handle them: we just need to calculate a final string with our expressions. However, meddling with string concatenation is annoying and error-prone. For this reason, Vue.js provides special enhancements when `v-bind` is used for `class` and `style`. In addition to Strings, the expressions can also evaluate to Objects or Arrays.
+Um uso comum de data binding é para manipular as classes e estilos de um elemento. Já que eles são ambos atributos, nós podemos usar a diretiva `v-bind` para isso: nós apenas precisamos calcular uma string final com nossas expressões. No entanto, lidar com concatenação de strings é chato e propenso a errors. Por conta disso, o Vue.js fornece melhorias quando a diretiva `v-bind` for usada para `class` e `style`. Em adição às Strings, as expressões também podem ser processadas como objetos ou arrays.
 
-## Binding HTML Classes
+## Vinculando Classes HTML
 
-<p class="tip">Although you can use mustache interpolations such as `{% raw %}class="{{ className }}"{% endraw %}` to bind the class, it is not recommended to mix that style with `v-bind:class`. Use one or the other!</p>
+<p class="tip">Apesar de você poder usar interpolações com chaves duplas, como `{% raw %}class="{{ className}}"{% endraw %}` para ligar à classe, não é recomendado misturar esse estilo com `v-bind:class`. Use apenas um ou outro!</p>
 
 ### Object Syntax
 
-We can pass an Object to `v-bind:class` to dynamically toggle classes. Note the `v-bind:class` directive can co-exist with the plain `class` attribute:
+Nós podemos passar um objeto para a diretiva `v-bind:class` para trocar as classes dinamicamente. Note que a diretiva `v-bind:class` pode co-existir com o atributo `class`:
 
 ``` html
 <div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }"></div>
@@ -24,7 +24,7 @@ data: {
 }
 ```
 
-Which will render:
+Que vai renderizar:
 
 ``` html
 <div class="static class-a"></div>
