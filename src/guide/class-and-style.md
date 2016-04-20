@@ -30,9 +30,9 @@ Que vai renderizar:
 <div class="static class-a"></div>
 ```
 
-When `isA` and `isB` changes, the class list will be updated accordingly. For example, if `isB` becomes `true`, the class list will become `"static class-a class-b"`.
+Quando `isA` e `isB` mudarem, a lista de classes será atualizada de acordo. Por exemplo, se `isB` tornar-se `true`, a lista de classes irá transformar-se em `"static class-a class-b"`.
 
-And you can directly bind to an object in data as well:
+E você pode ligar diretamente a um objeto também:
 
 ``` html
 <div v-bind:class="classObject"></div>
@@ -46,7 +46,7 @@ data: {
 }
 ```
 
-This will render the same result. As you may have noticed, we can also bind to a [computed property](computed.html) that returns an Object. This is a common and powerful pattern.
+Isso irá renderizar o mesmo resultado. Como você talvez tenha percebido, nós também podemos à uma [computed property](computed.html) que retorna um objeto. Isso é um padrão comum e poderoso.
 
 ### Array Syntax
 
