@@ -48,9 +48,9 @@ data: {
 
 Isso irá renderizar o mesmo resultado. Como você talvez tenha percebido, nós também podemos à uma [computed property](computed.html) que retorna um objeto. Isso é um padrão comum e poderoso.
 
-### Array Syntax
+### Sintaxe de Array
 
-We can pass an Array to `v-bind:class` to apply a list of classes:
+Nós podemos passar um Array para a diretiva `v-bind:class` para aplicar uma lista de classes:
 
 ``` html
 <div v-bind:class="[classA, classB]">
@@ -62,19 +62,19 @@ data: {
 }
 ```
 
-Which will render:
+Que irá renderizar:
 
 ``` html
 <div class="class-a class-b"></div>
 ```
 
-If you would like to also toggle a class in the list conditionally, you can do it with a ternary expression:
+Se você também gostaria de alternar uma classe na lista condicionalmente, você pode fazê-lo com uma expressão ternária:
 
 ``` html
 <div v-bind:class="[classA, isB ? classB : '']">
 ```
 
-This will always apply `classA`, but will only apply `classB` when `isB` is `true`.
+Isso irá sempre aplicar `classA`, mas irá aplicar `classB` apenas quando `isB` for `true`.
 
 ## Binding Inline Styles
 
