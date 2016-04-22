@@ -76,11 +76,11 @@ Se você também gostaria de alternar uma classe na lista condicionalmente, voc�
 
 Isso irá sempre aplicar `classA`, mas irá aplicar `classB` apenas quando `isB` for `true`.
 
-## Binding Inline Styles
+## Ligando Estilos
 
-### Object Syntax
+### Sintaxe de Objeto
 
-The Object syntax for `v-bind:style` is pretty straightforward - it looks almost like CSS, except it's a JavaScript object. You can use either camelCase or kebab-case for the CSS property names:
+A sintaxe de Objeto para a diretiva `v-bind:style` é bem simples - é quase como CSS, exceto por ser um objeto do JavaScript. Você pode usar camelCase ou kebab-case para o nome das propriedades CSS:
 
 ``` html
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
@@ -92,7 +92,7 @@ data: {
 }
 ```
 
-It is often a good idea to bind to a style object directly so that the template is cleaner:
+Geralmente é uma boa ideia estilizar o objeto diretamente, deixando o template mais limpo: 
 
 ``` html
 <div v-bind:style="styleObject"></div>
@@ -106,7 +106,7 @@ data: {
 }
 ```
 
-Again, the Object syntax is often used in conjunction with computed properties that return Objects.
+Novamente, a sintaxe de Objeto é geralmente utilizada em conjunto à computed properties que retornam objetos.
 
 ### Array Syntax
 
