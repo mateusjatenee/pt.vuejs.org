@@ -108,14 +108,14 @@ data: {
 
 Novamente, a sintaxe de Objeto é geralmente utilizada em conjunto à computed properties que retornam objetos.
 
-### Array Syntax
+### Sintaxe de Array
 
-The Array syntax for `v-bind:style` allows you to apply multiple style objects to the same element:
+A sintaxe de array para `v-bind:style` permite aplicar-se multiplos objetos de estilo ao mesmo elemento:
 
 ``` html
 <div v-bind:style="[styleObjectA, styleObjectB]">
 ```
 
-### Auto-prefixing
+### Prefixos automáticos
 
-When you use a CSS property that requires vendor prefixes in `v-bind:style`, for example `transform`, Vue.js will automatically detect and add appropriate prefixes to the applied styles.
+Quando você usa uma propriedade CSS que precisa de prefixos em `v-bind:style`, `transform` por exemplo, o Vue irá automaticamente detectar e adicionar os prefixos apropriados aos estilos aplicados.
