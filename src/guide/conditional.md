@@ -6,7 +6,7 @@ order: 7
 
 ## v-if
 
-In string templates, for example Handlebars, we would write a conditional block like this:
+Em templates como Handlebars, nós poderíamos escrever um bloco condicional assim:
 
 ``` html
 <!-- Handlebars template -->
@@ -15,13 +15,13 @@ In string templates, for example Handlebars, we would write a conditional block 
 {{/if}}
 ```
 
-In Vue.js, we use the `v-if` directive to achieve the same:
+No Vue.js, nós usamos a diretiva `v-if` para atingir o mesmo resultado:
 
 ``` html
 <h1 v-if="ok">Yes</h1>
 ```
 
-It is also possible to add an "else" block with `v-else`:
+Também é possível adicionar um bloco "else" com `v-else`:
 
 ``` html
 <h1 v-if="ok">Yes</h1>
