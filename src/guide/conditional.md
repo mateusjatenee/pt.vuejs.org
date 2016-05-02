@@ -30,7 +30,8 @@ Também é possível adicionar um bloco "else" com `v-else`:
 
 ## Template v-if
 
-Because `v-if` is a directive, it has to be attached to a single element. But what if we want to toggle more than one element? In this case we can use `v-if` on a `<template>` element, which serves as an invisible wrapper. The final rendered result will not include the `<template>` element.
+Por conta de `v-if` ser uma diretiva, ela tem de ser anexada a um único elemento. Mas e se quisermos adicionar mais de 
+um elemento? Nesse caso, podemos usar `v-if` num elemento `<template>`, que serve como um "wrapper" invisível. O template renderizado não irá incluir o elemento `<template`.
 
 ``` html
 <template v-if="ok">
