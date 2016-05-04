@@ -70,10 +70,10 @@ O elemento `v-else` deve estar logo após o elemento com `v-if` ou `v-show` - se
 
 ## v-if vs. v-show
 
-When a `v-if` block is toggled, Vue.js will have to perform a partial compilation/teardown process, because the template content inside `v-if` can also contain data bindings or child components. `v-if` is "real" conditional rendering because it ensures that event listeners and child components inside the conditional block are properly destroyed and re-created during toggles.
+Quando um bloco `v-if` é alternado, o Vue.js precisará fazer um processo de compilação parcial, porque o conteúdo dentro de um bloco `v-if` pode conter data bindings e componentes-filhos. A diretiva `v-if` realmente baseia-se em renderização condicional porque ela garante que event listeners e componentes-filhos dentro do bloco condicional são destruídos e recriados durante alternâncias.
 
-`v-if` is also **lazy**: if the condition is false on initial render, it will not do anything - partial compilation won't start until the condition becomes true for the first time (and the compilation is subsequently cached).
+A diretiva `v-if` é, também, **lazy**: se uma condição é falsa na renderização inicial, ela não irá fazer nada — a compilação não irá começar até que a condição torne-se verdadeira pela primeira vez.
 
-In comparison, `v-show` is much simpler - the element is always compiled and preserved, with just simple CSS-based toggling.
+Em comparação, a diretiva `v-show` é muito mais simples - o elemento sempre é compilado e preservado, com apenas uma propriedade CSS básica.
 
-Generally speaking, `v-if` has higher toggle costs while `v-show` has higher initial render costs. So prefer `v-show` if you need to toggle something very often, and prefer `v-if` if the condition is unlikely to change at runtime.
+Geralmente, a diretiva `v-if` tem um maior custo de processamento enquanto `v-show` tem um custo de renderização inicial. Portanto, prefira usar `v-show` se você precisa alternar a visiblidade de algo todo o tempo, e prefira `v-if` se a condição raramente vai mudar.
