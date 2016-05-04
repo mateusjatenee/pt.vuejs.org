@@ -55,7 +55,7 @@ Note que `v-show` não suporta a síntaxe de `<template>`.
 
 ## v-else
 
-You can use the `v-else` directive to indicate an "else block" for `v-if` or `v-show`:
+Você pode usar a diretiva `v-else` para indicar um "bloco else" para `v-if` ou `v-show`:
 
 ``` html
 <div v-if="Math.random() > 0.5">
@@ -66,7 +66,7 @@ You can use the `v-else` directive to indicate an "else block" for `v-if` or `v-
 </div>
 ```
 
-The `v-else` element must immediately follow the `v-if` or `v-show` element - otherwise it will not be recognized.
+O elemento `v-else` deve estar logo após o elemento com `v-if` ou `v-show` - se não, ele não será reconhecido.
 
 ## v-if vs. v-show
 
