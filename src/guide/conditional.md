@@ -43,15 +43,15 @@ um elemento? Nesse caso, podemos usar `v-if` num elemento `<template>`, que serv
 
 ## v-show
 
-Another option for conditionally displaying an element is the `v-show` directive. The usage is largely the same:
+Outra opção para exibir elementos condicionalmente é a diretiva `v-show`. O uso é geralmente o mesmo:
 
 ``` html
 <h1 v-show="ok">Hello!</h1>
 ```
 
-The difference is that an element with `v-show` will always be rendered and remain in the DOM; `v-show` simply toggles the `display` CSS property of the element.
+A diferença é que um elemento com `v-show` sempre será renderizando e existirá na DOM; `v-show` simplesmente altera a propriedade CSS `display` do elemento.
 
-Note that `v-show` doesn't support the `<template>` syntax.
+Note que `v-show` não suporta a síntaxe de `<template>`.
 
 ## v-else
 
