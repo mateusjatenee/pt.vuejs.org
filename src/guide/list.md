@@ -1,14 +1,14 @@
 ---
-title: List Rendering
+title: Renderização de listas
 type: guide
 order: 8
 ---
 
 ## v-for
 
-We can use the `v-for` directive to render a list of items based on an Array. The `v-for` directive requires a special syntax in the form of `item in items`, where `items` is the source data Array and `item` is an **alias** for the Array element being iterated on:
+Nós podemos usar a diretiva `v-for` para renderizar uma lista de itens baseada em um Array. A diretiva `v-for` precisa de uma sintaxe especial na forma de `item in items`, em que `items` é o array original e `item` é um **apelido** para o elemento do array que está sendo iterado:
 
-**Example:**
+**Exemplo:**
 
 ``` html
 <ul id="example-1">
@@ -30,7 +30,7 @@ var example1 = new Vue({
 })
 ```
 
-**Result:**
+**Resultado:**
 
 {% raw %}
 <ul id="example-1" class="demo">
